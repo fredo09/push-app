@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "push-notification-app",
-    "slug": "push-notification-app",
+    "slug": "push-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -37,6 +37,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "70dd126a-b7ec-4b1b-a217-117813e84f5e"
+      }
+    },
+    "owner": "fredyx_9"
   }
 }
