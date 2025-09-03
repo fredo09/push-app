@@ -126,7 +126,7 @@ export const usePushNotification = () => {
     areListenerReady = true;
 
     const notificationListener = Notifications.addNotificationReceivedListener(notification => {
-          setNotifications([notification, ...notifications]);
+          setNotifications((prevNotifications) => [notification, ...prevNotifications]);
     });
     
     const responseListener = Notifications.addNotificationResponseReceivedListener(response => {
@@ -137,7 +137,7 @@ export const usePushNotification = () => {
       notificationListener.remove();
       responseListener.remove();
     };
-  }, [notifications]);
+  }, []);
 
 	return {
 		// * Properties
