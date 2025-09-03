@@ -37,3 +37,7 @@ yarn-error.*
 *.tsbuildinfo
 
 app-example
+
+# tokens files expo push notifications firebase
+google-services.json
+expo-push-notification-a-4e25b-firebase-adminsdk-fbsvc-e1db8f8b0e.json
